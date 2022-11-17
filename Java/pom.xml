@@ -50,6 +50,7 @@
                     <formats>
                         <format>xml</format>
                     </formats>
+                    <check/>
                 </configuration>
                 <executions>
                     <execution>
@@ -62,6 +63,15 @@
             </plugin>
         </plugins>
     </build>
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>cobertura-maven-plugin</artifactId>
+                <version>2.7</version>
+            </plugin>
+        </plugins>
+    </reporting>
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
